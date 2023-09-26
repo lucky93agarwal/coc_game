@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/closePopup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/close"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popupback"
+        android:layout_margin="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:elevation="18dp"
+            android:background="@drawable/popupback"
+            app:cardBackgroundColor="#006fff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popupback"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/chewys"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="-2"
+                        android:shadowDy="-2"
+                        android:shadowRadius="1"
+                        android:text="Menu"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/depositlayout"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/other_faq"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/faqone" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:fontFamily="@font/chewys"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="-2"
+                                    android:shadowDy="-2"
+                                    android:shadowRadius="1"
+                                    android:text="FAQ"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/other_feedback"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/feedback" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:fontFamily="@font/chewys"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="-2"
+                                    android:shadowDy="-2"
+                                    android:shadowRadius="1"
+                                    android:text="Feedback"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/other_how_to_play"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/ppppp"
+                                    android:layout_width="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/faq" />
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:fontFamily="@font/chewys"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="-2"
+                                    android:shadowDy="-2"
+                                    android:shadowRadius="1"
+                                    android:text="How to play"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/other_privacy_policy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/sslock" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:fontFamily="@font/chewys"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="-2"
+                                    android:shadowDy="-2"
+                                    android:shadowRadius="1"
+                                    android:text="Privacy Policy"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/other_teams_and_condication"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/terms" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:fontFamily="@font/chewys"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="-2"
+                                    android:shadowDy="-2"
+                                    android:shadowRadius="1"
+                                    android:text="Terms and Conditions"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

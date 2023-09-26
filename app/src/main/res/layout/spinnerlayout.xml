@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/closePopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cancel"
+        android:layout_marginTop="7dp"
+
+        android:layout_marginRight="7dp"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:elevation="18dp"
+        android:background="@drawable/com_facebook_tooltip_blue_background"
+        app:cardBackgroundColor="#006fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/coustard"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="-2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="1"
+                    android:text="Top 10 Ranks Prize"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/popupbackground"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Win Contest"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Prize"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 1"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="1000Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 2"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="900Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 3"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="800Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 4"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="700Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 5"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="600Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 6"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="500Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 7"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="400Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 8"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="300Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 9"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="200Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvra10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="Rank 10"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvrank10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/coustard"
+                            android:gravity="center_horizontal"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="100Rs."
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

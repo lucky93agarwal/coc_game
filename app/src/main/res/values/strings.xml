@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">COC</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tab_text_1">CHALLENGER</string>
+    <string name="tab_text_2">CHALLENGES</string>
+    <string name="tab_text_3">RESULT</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboard1">Dashboard1</string>
+    <string name="title_activity_main2">Tabbedactivity</string>
+    <string name="otp"><u>Resend OTP</u></string>
+    <string name="contestcreated">Contest Created</string>
+    <string name="contestwon">Contest Won</string>
+    <string name="contestlose">Contest Lose</string>
+    <string name="contestamount">Contest Amount</string>
+    <string name="challengejoin">Contest Joined</string>
+    <string name="challengewon">Contest Won</string>
+    <string name="challengelose">Challenge Lose</string>
+    <string name="challngeamount">Challenge Amount</string>
+    <string name="facebook_app_id">346967265900642</string>
+    <string name="fb_login_protocol_scheme">fb346967265900642</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7732542218948500/3414241106</string>
+    <string name="title_activity_main_navigation_drawer">MainNavigationDrawerActivity</string>
+    <string name="note_bonus_cash_will_be_added_within_5_minutes_of_transaction">Note: Bonus Cash Will Be Added Within 5 Minutes of Transaction.</string>
+    <string name="deposit">Deposit</string>
+    <string name="game_khelo_cash_jeeto">Game Khelo, Cash Jeeto!</string>
+    <string name="you_get_rs_3">You can earn 3 50-50 lifeline from each friend whenever he/she installs and registers by using your refferal code/link. Also you will get cashback whenever your friend deposit money in the App.
+Now share your Call of Challengers app and start earning.</string>
+
+
+</resources>

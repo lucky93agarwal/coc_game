@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eb1c30"
+    android:orientation="vertical"
+    tools:context="com.challengers.of.call.Signin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/whitelogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+<!--                    <Button-->
+<!--                        android:id="@+id/firstbtn"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/buttonbackground"-->
+<!--                        android:text="5 Rs."-->
+<!--                        android:textSize="18dp" />-->
+                    <LinearLayout
+                        android:id="@+id/onelin"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxaddmoney"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/oners"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5 Rs."
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/onecb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_marginTop="5dp"
+                            android:text="5 Rs." />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/twolin"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxaddmoney"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/twors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="10 Rs." />
+                        <TextView
+                            android:id="@+id/twocb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_marginTop="5dp"
+                            android:text="10 Rs." />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/threelin"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxaddmoney"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/threers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="50 Rs." />
+                        <TextView
+                            android:id="@+id/threecb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_marginTop="5dp"
+                            android:text="50 Rs." />
+                    </LinearLayout>
+
+<!--                    <Button-->
+<!--                        android:id="@+id/secondtbtn"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/buttonbackground"-->
+<!--                        android:text="10 Rs."-->
+<!--                        android:textSize="18dp" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/threetbtn"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@drawable/buttonbackground"-->
+<!--                        android:text="50 Rs."-->
+<!--                        android:textSize="18dp" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+<!--                    <Button-->
+<!--                        android:id="@+id/fourbtn"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="100 Rs."-->
+<!--                        android:background="@drawable/buttonbackground"-->
+<!--                        android:textSize="18dp"/>-->
+                    <LinearLayout
+                        android:id="@+id/fourlin"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxaddmoney"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/fourrs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="100 Rs." />
+                        <TextView
+                            android:id="@+id/fourcb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_marginTop="5dp"
+                            android:text="100 Rs." />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fivelin"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxaddmoney"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/fivers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="500 Rs." />
+                        <TextView
+                            android:id="@+id/fivecb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_marginTop="5dp"
+                            android:text="500 Rs." />
+                    </LinearLayout>
+
+<!--                    <Button-->
+<!--                        android:id="@+id/fivebtn"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="500 Rs."-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:background="@drawable/buttonbackground" />-->
+                    <LinearLayout
+                        android:id="@+id/sixlin"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxaddmoney"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/sixrs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="1000 Rs." />
+                        <TextView
+                            android:id="@+id/sixcb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:layout_marginTop="5dp"
+                            android:text="1000 Rs." />
+                    </LinearLayout>
+<!--                    <Button-->
+<!--                        android:id="@+id/sixbtn"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="1000 Rs."-->
+<!--                        android:background="@drawable/buttonbackground"-->
+<!--                        android:textSize="18dp"/>-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/_30sdp">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_wallet_black_24dp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:theme="@style/TextLabel">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edpay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:hint="Please Enter Amount..."
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#fff"
+                        android:textColorHint="#fff" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="On this version, you can only play Free contests. To use other Exciting Features of our app, you need to update your app to Pro version. Click on Download Pro Version For FREE ."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/grad1"
+                android:text="Add Money"
+                android:textAllCaps="false"
+                android:textColor="#c20e14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Since Google's policy doesn't allow Apps offering cash contests on the Play Store, so you have to update app to Pro version to play. Sorry for inconvenience and Enjoy playing pro version."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

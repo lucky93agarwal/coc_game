@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eb1c30"
+    tools:context="com.challengers.of.call.Dashboard1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="10dp"-->
+            <!--&gt;-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/button"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:background="@drawable/paid"
+                android:textColor="#990000"
+                android:text=""/>
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--app:cardElevation="10dp"-->
+            <!--&gt;-->
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:paddingTop="10dp"
+                android:textColor="#990000"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/free"
+                android:text=""/>
+
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:itemIconTint="#981E1E"
+        app:itemTextColor="@color/black"
+        android:id="@+id/bottomnavigation"
+        app:labelVisibilityMode="labeled"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

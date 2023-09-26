@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundimg"
+    tools:context=".FeedbackQuestions">
+    <TextView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/chewys"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:text="FeedBack Form" />
+    <EditText
+        android:id="@+id/etyouremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/googlayout" />
+    <EditText
+        android:id="@+id/etsubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/googlayout"/>
+    <EditText
+        android:id="@+id/massageet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/googlayout"
+        android:lines="8"
+        android:padding="10dp"
+        android:gravity="top|left"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxLines="20"
+        android:hint="Write your feedback"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"/>
+    <Button
+        android:id="@+id/sendEmailbtn"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/strikerslayout"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.challengers.of.call">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- <supports-screens -->
+
+    <!-- android:largescreens="true" -->
+    <!-- android:normalscreens="true" -->
+    <!-- android:smallscreens="true" -->
+    <!-- android:xlargescreens="true" /> -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Votting.VottingActivity"></activity>
+        <activity android:name=".Upload_Img.UploadImageActivity" />
+        <activity android:name=".Notification.SecondActivity" />
+        <activity android:name=".Notification.NotificationActivity" />
+        <activity
+            android:name=".practice_webview.PracticeWebViewTwo"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".practice_webview.PracticeWebViewOne"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Practice.PracticeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ProgressbarActivity" />
+        <activity
+            android:name=".testing.TextingtwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".my_contest.MyContestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".walletActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ShareandEarnActivity" />
+        <activity android:name=".testing.textingActivity" />
+        <activity
+            android:name=".TextinActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Setting.SettingActivity" />
+        <activity android:name=".testing.Main3Activity" />
+        <activity
+            android:name=".GameTypes.GametypesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".otpActivity" />
+        <activity android:name=".FeedbackQuestions" />
+        <activity android:name=".HowtoPlay" />
+        <activity android:name=".FAQ" />
+        <activity android:name=".TermsandConditionsActivity" />
+        <activity android:name=".PrivacyPolicyActivity" />
+        <activity android:name=".Bazaar.BazaarActivity" />
+        <activity android:name=".Withdraw" />
+        <activity android:name=".checksum" />
+        <activity android:name=".paytm" />
+        <activity android:name=".wallethistory" />
+        <activity android:name=".Dialogboxlife" />
+        <activity
+            android:name=".Hackkey"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Leaderboardfreequiz"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".textingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainPopupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Testing"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".socialcode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FacebookLoginPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MySMSBroadCastReceiver"
+            android:screenOrientation="portrait">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <receiver
+            android:name=".Receiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Networkreceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.GCM Network Manager" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.permission.INTERNET" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Signin"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Challenger"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Playquiz"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activityquiz"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activityfreequiz"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Verifyotp"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:label="@string/title_activity_dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Createcontest"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Challenges"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Result"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mycontest"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard1"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:label="@string/title_activity_dashboard1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Transparent"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Activityanimator"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Challengefilter"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Questionwiseresult"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Startquiz"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Startfreequiz"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Leaderboard"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitywin"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".Profile"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Drawcircle"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Freequizdashboard"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Freequestionwiseresult"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Updateprofile"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Changepassword"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Earnmore"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Winnerdetail"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Viewall"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Life"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Wallet"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Template"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Addmoney"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Withdrawmoney"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Refer"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Testaudio"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Frogetpassword"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Verifyotpforpassword"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Resetpassword"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Displayanimation"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7732542218948500~9599487454" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Camactivity" />
+        <activity android:name=".More" />
+        <activity android:name=".Pop" />
+
+        <service
+            android:name=".TestJobService"
+            android:label="Word service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".TestJobServicefirebase"
+            android:label="Word service">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notification.MyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+    </application>
+
+</manifest>
